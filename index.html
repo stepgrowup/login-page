@@ -342,14 +342,19 @@
             color: #ffffff;
         }
 
-        .toggle-panel .btn{
-            width: 160px;
-            height: 46px;
-            background: transparent;
-            border: 2px solid #efdbbf;
-            color: #efdbbf;
-            box-shadow: none;
-        }
+.toggle-panel .btn {
+    width: 160px;
+    height: 46px;
+    background-image: linear-gradient(to right, #ffffff, #ffffff);
+    /* background: white; */
+    border: 2px solid #ffffff;
+    -webkit-background-clip: text;
+    color: transparent;
+    box-shadow: none;
+    border-image: linear-gradient(to right, #6a11cb, #2575fc);
+    border-image-slice: 1;
+    animation: animateInputBoxBorder 2s ease-in-out infinite;
+}
 
         @media screen and (max-width: 650px){
             .container{
